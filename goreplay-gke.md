@@ -1,8 +1,3 @@
----
-title: Goreplay GKE
-layout: template
-filename: goreplay-gke.md
---- 
 # Setting Up GoReplay as a Sidecar on Google Cloud Platform
 
 **Version:** 1.0  
