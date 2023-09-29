@@ -67,11 +67,12 @@ spec:
         - name: goreplay-sidecar
           image: goreplay/goreplay
           args:
-            - "--input-raw :80"
-            - "--output-http http://main-app-service:80"
+            - "--input-raw :8080"
+            - "--input-raw-track-response"
+            - "--output-file swan-%d-%H-%M-%S.log"
 ```
 
-Adjust the container names, images, and arguments as needed. In this example, GoReplay captures traffic on port 80 and forwards it to the main application service.
+Adjust the container names, images, and arguments as needed. In this example, GoReplay captures traffic on port 8080 and logs it as .log files.
 
 ## 7. Step 5: Configure GoReplay
 
