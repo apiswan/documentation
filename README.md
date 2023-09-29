@@ -6,20 +6,20 @@
 
 ## Table of Contents
 
-1. [Introduction](#1-introduction)
-2. [Prerequisites](#2-prerequisites)
-3. [Installation](#3-installation)
+1. [Introduction](#introduction)
+2. [Prerequisites](#prerequisites)
+3. [Installation](#installation)
    - [Step 1: Setup Goreplay](#step-1-setup-goreplay)
    - [Step 2: APISwan Executables](#step-2-apiswan-executables)
    - [Step 3: APISwan - Client](#step-3-apiswan---client)
    - [Step 4: APISwan - App](#step-4-apiswan---app)
-4. [Testing](#4-testing)
+4. [Testing](#testing)
 
-## 1. Introduction
+## Introduction
 
 This document provides a step-by-step guide to setting up APISwan for automated regression testing alongside your main application.
 
-## 2. Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following prerequisites in place:
 
@@ -28,7 +28,7 @@ Before you begin, ensure you have the following prerequisites in place:
 - [ ] APISwan client and UI binary executable files
 - [ ] APISwan Client ID
 
-## 3. Installation
+## Installation
 ### Step 1: Setup Goreplay
 Follow these guides to setup goreplay based on your existing tech stack:
 1. [AWS - Using Elastic Container Service (ECS)](goreplay-ecs.md)
@@ -59,6 +59,6 @@ Along with the client, you need to create a config.json files to configure the c
 Run the app binary file to access the UI.
 
 
-## 4. Testing
+## Testing
 
 Simulate traffic by manually calling different API endpoints of your application. Head over to the app and trigger a swan event to see the regression test in action.
