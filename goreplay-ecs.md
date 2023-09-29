@@ -76,16 +76,16 @@ Create an ECS task definition that includes both your main application container
         }
       ],
       "command": [
-        "--input-raw", ":80",
-        "--output-http", "main-app:80"
+        "--input-raw", ":8080",
+        "--input-raw-track-response",
+        "--output-file", "swan-%d-%H-%M-%S.log"
       ]
     }
   ]
 }
 ```
 
-Adjust the task definition details, container names, images, memory, CPU, and port mappings as needed. In this example, GoReplay captures traffic on port 80 and forwards it to the main application container.
-
+Adjust the task definition details, container names, images, memory, CPU, and port mappings as needed. In this example, GoReplay captures traffic on port 8080 and logs it as .log files.
 ## 7. Step 5: Configure GoReplay
 
 Configure GoReplay by specifying its command arguments within the ECS task definition. Customize GoReplay's options according to your specific use case, such as specifying capture and replay settings.
