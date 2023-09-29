@@ -10,13 +10,9 @@
 2. [Prerequisites](#prerequisites)
 3. [Step 1: Setup Goreplay](#step-1-enable-google-kubernetes-engine-gke)
 4. [Step 2: APISwan Executables](#step-2-create-a-gke-cluster)
-5. [Step 3: Get APISwan Client ID](#step-3-containerize-your-main-application)
-6. [Step 4: Create Kubernetes Deployment](#step-4-create-kubernetes-deployment)
-7. [Step 5: Configure GoReplay](#step-5-configure-goreplay)
-8. [Step 6: Deploy the Application with GoReplay](#step-6-deploy-the-application-with-goreplay)
-9. [Step 7: Testing](#step-7-testing)
-10. [Step 8: Monitoring and Logging](#step-8-monitoring-and-logging)
-11. [Conclusion](#conclusion)
+5. [Step 3: APISwan - Client](#step-3-containerize-your-main-application)
+6. [Step 4: APISwan - App](#step-4-create-kubernetes-deployment)
+7. [Step 5: Testing](#step-5-configure-goreplay)
 
 ## 1. Introduction
 
@@ -61,6 +57,6 @@ Along with the client, you need to create a config.json files to configure the c
 Run the app binary file to access the UI.
 
 
-## 9. Step 7: Testing
+## 7. Step 5: Testing
 
 Simulate traffic by manually calling different API endpoints of your application. Head over to the app and trigger a swan event to see the regression test in action.
