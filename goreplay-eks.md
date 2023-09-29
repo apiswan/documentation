@@ -1,9 +1,3 @@
----
-title: Goreplay EKS
-layout: template
-filename: goreplay-eks.md
---- 
-
 # Setting Up GoReplay as a Sidecar on AWS EKS
 
 **Version:** 1.0  
