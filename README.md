@@ -24,7 +24,7 @@ This document provides a step-by-step guide to setting up APISwan for automated 
 Before you begin, ensure you have the following prerequisites in place:
 
 - [ ] A Dockerized version of your main application.
-- [ ] Goreplay running as a sidecar container along with the main application.
+- [ ] [Goreplay](https://github.com/buger/goreplay) running as a sidecar container along with the main application.
 - [ ] APISwan client and UI binary executable files
 - [ ] APISwan Client ID
 
