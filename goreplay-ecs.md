@@ -18,11 +18,11 @@
 10. [Step 8: Monitoring and Logging](#step-8-monitoring-and-logging)
 11. [Conclusion](#conclusion)
 
-## 1. Introduction
+## Introduction
 
 This document provides a step-by-step guide to setting up GoReplay as a sidecar alongside your main application in an Amazon Elastic Container Service (ECS) cluster on Amazon Web Services (AWS). GoReplay is a versatile tool for capturing and replaying HTTP traffic, useful for various debugging and testing scenarios.
 
-## 2. Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following prerequisites in place:
 
@@ -31,19 +31,19 @@ Before you begin, ensure you have the following prerequisites in place:
 - [ ] A Dockerized version of your main application.
 - [ ] Basic knowledge of AWS ECS and task definitions.
 
-## 3. Step 1: Set Up AWS Environment
+## Step 1: Set Up AWS Environment
 
 Set up your AWS environment, including Virtual Private Cloud (VPC), subnets, security groups, and any necessary IAM roles. Ensure that you have the necessary permissions to create and manage resources in AWS.
 
-## 4. Step 2: Create an Amazon ECS Cluster
+## Step 2: Create an Amazon ECS Cluster
 
 Create an Amazon ECS cluster where you will deploy your containers. Use the AWS CLI or the AWS Management Console to create the cluster. Make sure to configure EC2 instances or Fargate profiles for your cluster to run your containers.
 
-## 5. Step 3: Containerize Your Main Application
+## Step 3: Containerize Your Main Application
 
 Dockerize your main application if it's not already containerized. Build the Docker image and push it to a container registry, such as Amazon Elastic Container Registry (ECR), or a similar registry.
 
-## 6. Step 4: Define ECS Task Definition
+## Step 4: Define ECS Task Definition
 
 Create an ECS task definition that includes both your main application container and the GoReplay container as sidecars. Refer to the provided example JSON task definition for guidance.
 
@@ -86,11 +86,11 @@ Create an ECS task definition that includes both your main application container
 ```
 
 Adjust the task definition details, container names, images, memory, CPU, and port mappings as needed. In this example, GoReplay captures traffic on port 8080 and logs it as .log files.
-## 7. Step 5: Configure GoReplay
+## Step 5: Configure GoReplay
 
 Configure GoReplay by specifying its command arguments within the ECS task definition. Customize GoReplay's options according to your specific use case, such as specifying capture and replay settings.
 
-## 8. Step 6: Deploy the Application with GoReplay
+## Step 6: Deploy the Application with GoReplay
 
 Create an ECS service and task definition using the provided ECS task definition. Deploy the application with GoReplay by running the following AWS CLI command:
 
@@ -100,15 +100,15 @@ aws ecs create-service --cluster my-cluster --service-name my-app-service --task
 
 Adjust cluster name, service name, task definition, and desired count according to your requirements.
 
-## 9. Step 7: Testing
+## Step 7: Testing
 
 Thoroughly test the setup to ensure that GoReplay is capturing and replaying traffic as expected. Use tools like curl or automated test suites to validate the behavior.
 
-## 10. Step 8: Monitoring and Logging
+## Step 8: Monitoring and Logging
 
 Set up monitoring and logging for your application and GoReplay to track their performance and behavior. You can use Amazon CloudWatch and other AWS services for this purpose.
 
-## 11. Conclusion
+## Conclusion
 
 Congratulations! You have successfully set up GoReplay as a sidecar alongside your main application in an Amazon ECS cluster on AWS. Ensure that you monitor and maintain your deployment for ongoing performance and reliability.
 
