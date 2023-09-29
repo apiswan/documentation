@@ -23,11 +23,11 @@ filename: goreplay-gke.md
 10. [Step 8: Monitoring and Logging](#step-8-monitoring-and-logging)
 11. [Conclusion](#conclusion)
 
-## 1. Introduction
+## Introduction
 
 This document provides a step-by-step guide to setting up GoReplay as a sidecar alongside your main application in a Google Kubernetes Engine (GKE) cluster on Google Cloud Platform (GCP). GoReplay is a versatile tool for capturing and replaying HTTP traffic, useful for various debugging and testing scenarios.
 
-## 2. Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following prerequisites in place:
 
@@ -36,7 +36,7 @@ Before you begin, ensure you have the following prerequisites in place:
 - [ ] A Dockerized version of your main application.
 - [ ] Basic knowledge of Kubernetes and GKE.
 
-## 3. Step 1: Enable Google Kubernetes Engine (GKE)
+## Step 1: Enable Google Kubernetes Engine (GKE)
 
 Enable the Google Kubernetes Engine API in your GCP project if it's not already enabled using the following command:
 
@@ -44,7 +44,7 @@ Enable the Google Kubernetes Engine API in your GCP project if it's not already 
 gcloud services enable container.googleapis.com
 ```
 
-## 4. Step 2: Create a GKE Cluster
+## Step 2: Create a GKE Cluster
 
 Create a GKE cluster where you will deploy your containers:
 
@@ -57,11 +57,11 @@ gcloud container clusters create my-cluster \
 
 Adjust the cluster name, number of nodes, machine type, and zone according to your requirements.
 
-## 5. Step 3: Containerize Your Main Application
+## Step 3: Containerize Your Main Application
 
 Dockerize your main application if it's not already containerized. Build the Docker image and push it to Google Container Registry (GCR) or a similar container registry.
 
-## 6. Step 4: Create Kubernetes Deployment
+## Step 4: Create Kubernetes Deployment
 
 Create a Kubernetes deployment configuration that includes both your main application container and the GoReplay container as sidecars. Refer to the provided example YAML configuration for guidance.
 
@@ -92,11 +92,11 @@ spec:
 
 Adjust the container names, images, and arguments as needed. In this example, GoReplay captures traffic on port 8080 and logs it as .log files.
 
-## 7. Step 5: Configure GoReplay
+## Step 5: Configure GoReplay
 
 Configure GoReplay by specifying its arguments within the Kubernetes deployment configuration. Customize GoReplay's options according to your specific use case, such as specifying capture and replay settings.
 
-## 8. Step 6: Deploy the Application with GoReplay
+## Step 6: Deploy the Application with GoReplay
 
 Apply the deployment configuration to create the pods with your main application and GoReplay sidecar:
 
@@ -104,15 +104,15 @@ Apply the deployment configuration to create the pods with your main application
 kubectl apply -f deployment.yaml
 ```
 
-## 9. Step 7: Testing
+## Step 7: Testing
 
 Thoroughly test the setup to ensure that GoReplay is capturing and creating the log files. Use tools like curl or automated test suites to validate the behavior.
 
-## 10. Step 8: Monitoring and Logging
+## Step 8: Monitoring and Logging
 
 Set up monitoring and logging for your application and GoReplay to track their performance and behavior. You can use Google Cloud Monitoring and Logging for this purpose.
 
-## 11. Conclusion
+## Conclusion
 
 Congratulations! You have successfully set up GoReplay as a sidecar alongside your main application in a GKE cluster on GCP. Ensure that you monitor and maintain your deployment for ongoing performance and reliability.
 
