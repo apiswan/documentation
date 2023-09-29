@@ -1,9 +1,3 @@
----
-title: Goreplay ECS
-layout: template
-filename: goreplay-ecs.md
---- 
-
 # Setting Up GoReplay as a Sidecar on AWS ECS
 
 **Version:** 1.0  
