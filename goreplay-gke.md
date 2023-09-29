@@ -90,7 +90,7 @@ spec:
             - "--output-file swan-%d-%H-%M-%S.log"
 ```
 
-Adjust the container names, images, and arguments as needed. In this example, GoReplay captures traffic on port 8080 and logs it in log files.
+Adjust the container names, images, and arguments as needed. In this example, GoReplay captures traffic on port 8080 and logs it as .log files.
 
 ## 7. Step 5: Configure GoReplay
 
