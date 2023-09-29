@@ -6,13 +6,13 @@
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Prerequisites](#prerequisites)
-3. [Step 1: Setup Goreplay](#step-1-enable-google-kubernetes-engine-gke)
-4. [Step 2: APISwan Executables](#step-2-create-a-gke-cluster)
-5. [Step 3: APISwan - Client](#step-3-containerize-your-main-application)
-6. [Step 4: APISwan - App](#step-4-create-kubernetes-deployment)
-7. [Step 5: Testing](#step-5-configure-goreplay)
+1. [Introduction](#1-introduction)
+2. [Prerequisites](#2-prerequisites)
+3. [Step 1: Setup Goreplay](#3-step-1-setup-goreplay)
+4. [Step 2: APISwan Executables](#4-step-2-apiswan-executables)
+5. [Step 3: APISwan - Client](#5-step-3-apiswan---client)
+6. [Step 4: APISwan - App](#6-step-4-apiswan---app)
+7. [Step 5: Testing](#7-step-5-testing)
 
 ## 1. Introduction
 
