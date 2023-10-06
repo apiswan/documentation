@@ -1,4 +1,5 @@
-# API Swan
+# <img src="https://github.com/apiswan/documentation/assets/138169260/aeb58b96-56d7-4c99-b0d2-46eb54bdfa49" width="24"> API Swan 
+
 
 **Version:** 1.0  
 **Last Updated:** 29 Sep 2023  
