@@ -34,6 +34,7 @@ Follow these guides to setup goreplay based on your existing tech stack:
 1. [AWS - Using Elastic Container Service (ECS)](goreplay-ecs.md)
 2. [AWS - Using Elastic Kubernetes Service (EKS)](goreplay-eks.md)
 3. [GCP - Using Google Kubernetes Engine (GKE)](goreplay-gke.md)
+4. [Docker](goreplay-docker.md)
 
 ### Step 2: APISwan Executables
 To setup APISwan, you need the following binary files:
