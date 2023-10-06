@@ -29,7 +29,7 @@ services:
     # Add other GoReplay configuration options if needed
 ```
 
-In this example, we have two services: `main-app` and `goreplay`. The `main-app` service runs your main application, and the `goreplay` service runs the GoReplay container as a sidecar. GoReplay is configured to capture traffic on port 8080 and logs it as .log files.
+In this example, we have two services: `main-app` and [`goreplay`](https://github.com/buger/goreplay). The `main-app` service runs your main application, and the `goreplay` service runs the GoReplay container as a sidecar. GoReplay is configured to capture traffic on port 8080 and logs it as .log files.
 
 2. Save the Docker Compose file in your project directory.
 
