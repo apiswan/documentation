@@ -13,7 +13,7 @@
    - [Step 1: Setup Goreplay](#step-1-setup-goreplay)
    - [Step 2: APISwan Executables](#step-2-apiswan-executables)
    - [Step 3: APISwan - Client](#step-3-apiswan---client)
-   - [Step 4: APISwan - App](#step-4-apiswan---app)
+   - [Step 4: APISwan - Web App](#step-4-apiswan---app)
 4. [Testing](#testing)
 
 ## Introduction
@@ -59,8 +59,11 @@ In addition to the client executable, you will need to create a `config.json` fi
 }
 ```
 
-### Step 4: APISwan - App
+### Step 4: APISwan - Web App
 Launch the app binary file to access the user interface.
+```
+serve -s -l 3000 apiswan-ui
+```
 
 ## Testing
 
