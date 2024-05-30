@@ -59,7 +59,12 @@ In addition to the client executable, you will need to create a `config.json` fi
 }
 ```
 
-### Step 4: APISwan - Web App
+### Step 4: Start Goreplay
+```
+sudo ./gor --input-raw :8080 --input-raw-track-response --output-file swan-%d-%H-%M-%S.log
+```
+
+### Step 5: APISwan - Web App
 Launch the app binary file to access the user interface.
 ```
 serve -s -l 3000 apiswan-ui
