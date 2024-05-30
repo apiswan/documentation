@@ -28,6 +28,7 @@ Before you begin, ensure you have the following prerequisites in place:
 - [ ] [Goreplay](https://github.com/buger/goreplay) running as a sidecar container along with the main application.
 - [ ] APISwan client and UI binary executable files
 - [ ] APISwan Client ID
+- [ ] `serve` (optional) - for the webapp
 
 ## Installation
 ### Step 1: Setup Goreplay
