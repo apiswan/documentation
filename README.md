@@ -79,6 +79,12 @@ sudo ./gor --input-raw :8080 --input-raw-track-response --output-file swan-%d-%H
 ```
 
 ### Step 5: APISwan - Web App
+
+(Optional) Download Serve
+```
+sudo npm install serve
+```
+
 Launch the app binary file to access the user interface.
 ```
 serve -s -l 3000 apiswan-ui
